@@ -224,7 +224,7 @@ public:
 		return Get();
 	}
 
-	typedef SettingHolder<GLuint, GLuint> Holder;
+	// typedef SettingHolder<GLuint, GLuint> Holder;
 
 	Holder Push(BufferName obj)
 	{
@@ -356,7 +356,7 @@ public:
 
 	void Bind(ObjectName<ObjTag> obj)
 	{
-		return this->_set(GetName(obj));
+		/* return */ this->_set(GetName(obj));
 	}
 };
 
